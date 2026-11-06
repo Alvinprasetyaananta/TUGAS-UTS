@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Penyewaan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <h1>Rental Mobil 003</h1>
+            <nav>
+                <a href="index.html">Beranda</a>
+                <a href="katalog_003.html">Katalog Mobil</a>
+                <a href="penyewaan.html">Penyewaan</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="form-section">
+            <h2>Form Penyewaan Mobil</h2>
+            <p>Silakan isi data penyewaan berikut.</p>
+
+            <form id="formSewa">
+
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama"
+                       placeholder="Masukkan nama lengkap" required>
+
+                <label for="mobil">Pilih Mobil</label>
+                <select id="mobil" required>
+                    <option value="">-- Pilih Mobil --</option>
+                    <option>Supra MK4 003</option>
+                    <option>Porsche 003</option>
+                    <option>RX-7 003</option>
+                    <option>GTR 003</option>
+                    <option>BMW F30 003</option>
+                    <option>AE 86 003</option>
+                </select>
+
+                <label for="lama">Lama Sewa (Hari)</label>
+                <input type="number" id="lama"
+                       min="1" placeholder="Minimal 1 hari" required>
+
+                <button type="submit" class="button">
+                    Kirim Penyewaan
+                </button>
+
+                <p id="pesan"></p>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rental Mobil 123</p>
+    </footer>
+
+</body>
+</html>
